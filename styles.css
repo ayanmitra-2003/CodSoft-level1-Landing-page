@@ -1,0 +1,271 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+  color: white;
+  transition: background 0.3s;
+}
+
+/* Logo on the left */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adds spacing between the logo image and text */
+  margin-right: auto; /* Pushes the logo to the left */
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: black;
+  margin: 0;
+}
+
+/* Navigation menu on the right */
+.nav-menu {
+  display: flex;
+  justify-content: flex-end; /* Aligns the nav links to the right */
+  align-items: center;
+  gap: 20px; /* Adds spacing between the links */
+  margin-left: auto; /* Pushes the nav menu to the extreme right */
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #ff758c; /* Changes the text color on hover */
+  transform: scale(1.1); /* Slightly increases the size of the link on hover */
+}
+
+/* Active link effect */
+.nav-menu a.active {
+  color: #ff758c;
+  font-weight: bold;
+}
+
+
+  
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/736x/4f/87/b4/4f87b444df73dd546d53385aab03be9f.jpg); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: 1; /* Ensures the overlay is behind the text */
+  }
+  
+  .hero .container {
+    position: relative;
+    z-index: 2; /* Ensures the text stays above the overlay */
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+  
+  .hero p {
+    margin: 15px 0;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    background: white;
+    color: #ff758c;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+
+/* About Section */
+.about {
+    padding: 50px 0;
+    background: #f7f7f7;
+  }
+  
+  .about h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .about-more-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .read-more-btn {
+    padding: 10px 20px;
+    background: #ff758c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background: #ff4c61;
+  }
+  
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    background: #f7f7f7;
+  }
+  
+  .services h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .service {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    height: 250px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .service.user-experience {
+    background-image: url(https://i.pinimg.com/736x/95/58/70/955870e5a6cf0d44663672a153426f0a.jpg); /* Replace with your JPG image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service.creative-design {
+    background-image: url(https://i.pinimg.com/736x/a1/ac/59/a1ac595487c6e2fa9b64b072a4665415.jpg); /* Replace with your JPG image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service.retina-ready {
+    background-image: url(https://i.pinimg.com/736x/a7/15/dd/a715ddaac708764d47074cf174b3784e.jpg); /* Replace with your JPG image URL */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .service-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    border-radius: 10px;
+  }
+  
+  .service:hover .service-overlay {
+    opacity: 1; /* Show overlay when hovering over the service box */
+  }
+  
+  .service h3 {
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  
+/* Contact Section */
+.contact {
+    padding: 50px 0;
+    background: #fff;
+}
+
+.contact h2 {
+    font-size: 2rem;
+}
+
+.contact p {
+    margin-top: 10px;
+}
+
+/* Back-to-Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+}
+
+.back-to-top:hover {
+    background: #ff1493;
+}
