@@ -1,2 +1,2 @@
-# CodSoft-level1-Calculator
-This project is a simple yet efficient calculator built with HTML, CSS, and JavaScript to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
+# CodSoft-level1-Landing-page
+This project is a simple yet efficient landing page built using HTML, CSS, and JavaScript, designed to create an engaging and responsive web presence.
